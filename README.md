@@ -9,3 +9,8 @@ Inventory management features allow blood banks to track blood inventory levels,
 Reporting features provide blood banks with analytics and insights into blood usage patterns, inventory levels, and other key performance indicators. The application may also include features for scheduling blood drives, managing volunteers, and communicating with donors.
 
 Overall, a blood bank application is a critical tool for managing the complex process of collecting and distributing blood donations, ensuring the safety and availability of the blood supply, and ultimately, saving lives
+
+Team Members
+1.Rishabh awasthi
+2.Rishabh kumar
+3.Saurab sharma
