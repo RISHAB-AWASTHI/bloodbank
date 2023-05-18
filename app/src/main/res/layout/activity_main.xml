@@ -7,6 +7,8 @@
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
     tools:context=".MainActivity">
+    android:background="@android:color/white"
+    tools:context=".Activities.MainActivity">
 
     <TextView
         android:id="@+id/titleTextView"
@@ -34,11 +36,66 @@
         android:layout_marginTop="16dp"
         android:text="Search" />
 
+
     <TextView
         android:id="@+id/resultsTextView"
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="@string/app_name"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        app:menu="@menu/search_menu"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/searchButton"
         android:layout_marginTop="16dp" />
 
+
 </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/pick_location"
+        android:padding="5dp"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:drawableTint="@android:color/black"
+        android:background="#FAFAFA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textStyle="italic"
+        android:drawableEnd="@drawable/ic_search_black_24dp"
+        android:text="Choose Location" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/linearLayout"
+        android:layout_above="@+id/make_request_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/make_request_button"
+        android:text="Make Request"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+
